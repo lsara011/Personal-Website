@@ -6,7 +6,6 @@
 body{
      font-family: Teko, sans-serif;
      background-color: navajowhite;
-     height: 100vh;
 }
 
 header{
@@ -15,7 +14,7 @@ header{
     justify-content: space-around;
 }
 .name{
-    font-size: 35px;
+    font-size: 2.8vw;
     color: black;
     text-align: center;
 }
@@ -26,7 +25,6 @@ header{
 }
 
 .nav{
-    width: 500px;
     display: flex;
     justify-content: space-around;
 }
@@ -34,7 +32,8 @@ header{
 .nav a{
     color: black;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2.5vw;
+    margin: 25px;
     display: flex;
     transition: ease 0.25s;    
 }
@@ -47,7 +46,7 @@ header{
 section{
     display: flex;
     justify-content: center;
-    margin: 100px;
+    margin: 30px;
 }
 
 .wrap{
@@ -59,7 +58,8 @@ section{
 }
 
 .wrap p{
-    font-size: 20px;
+    font-size: 2vw;
+    line-height: 75px;
     text-align: center;
 
 }
@@ -67,7 +67,7 @@ section{
 .introduction span{
     transition: ease 1s;
     color: black;
-    font-size: 200px;
+    font-size: 11vw;
     font-family: Teko, sans-serif;
     text-shadow: 15px 15px white;
 }
@@ -85,7 +85,6 @@ footer{
     height: 100px;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 200px;
 }
 
 footer h3{
@@ -95,22 +94,52 @@ footer h3{
 .social-media{
     display: flex;
     justify-content: space-evenly;
-    width: 200px;
+    align-content: center;
 }
 
-.social-media a{
-    font-size: 30px;
+.social-media i{
+    margin: 25px;
+    font-size: 2vw;
     text-decoration: none;
     color: black;
     transition: ease 0.25s;
 }
 
-.social-media a:hover{
+.social-media i:hover{
     text-shadow: 5px 5px white;
 }
 
-@media only screen and (max-width: 320px){
-    .name{
+@media only screen and (max-width: 1024px){
+    .nav a{
+        font-size: 4vw;
+    }
 
+    .social-media i{
+        font-size: 3vw;
+    }
+
+    .intro-paragraph p{
+        font-size: 2em;
+    }
+
+    .introduction h2 span{
+        font-size: 15vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+    .wrap p{
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .nav a{
+        font-size: 7vw;
+    }
+
+    .wrap p{
+        font-size: 10vw;
     }
 }
