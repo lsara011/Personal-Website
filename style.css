@@ -190,6 +190,9 @@ header .fa-bars{
         letter-spacing: 1px;;
     }
     
+    .social-media i{
+        font-size:5vw;
+    }
 /* Show menu items when checkbox is checked */
 #check:checked ~ .menu-items{
     transition: 1s ease;
