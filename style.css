@@ -5,23 +5,37 @@
 
 body{
      font-family: Teko, sans-serif;
-     background-color: navajowhite;
+     background-color: #373854 ;
      height: 100vh;
+     background-image: url("webSITE.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     max-width: 100%;
+     max-height: 100%;
 }
 
 header{
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: space-around;
+    background-color: black;
+    border-bottom: 2px black solid;
 }
 .name{
     font-size: 2.5vw;
-    color: black;
+    color: White;
     text-align: center;
 }
-.name:hover{
-    transition: ease 0.25s;
-    text-shadow: 5px 5px white;
+.name a{
+    text-decoration: none;
+    color: white;
+    transition: ease 0.25s;    
+}
+.name a:hover{
+
+    color: #06013e;
     cursor: pointer ;
 }
 
@@ -31,7 +45,7 @@ header{
 }
 
 .nav a{
-    color: black;
+    color: White;
     text-decoration: none;
     font-size: 1.6vw;
     margin: 25px;
@@ -43,14 +57,13 @@ header{
 }
 
 .nav a:hover{
-    letter-spacing: 2px;
-    text-shadow: 5px 5px white;
+    color: #06013e;
 }
 
 section{
     display: flex;
     justify-content: center;
-    margin: 30px;
+
 }
 
 .wrap{
@@ -59,6 +72,7 @@ section{
     text-align: center;
     flex-direction: column;
     max-width: 1000px;
+
 }
 
 .wrap p{
@@ -70,13 +84,17 @@ section{
 
 .introduction span{
     transition: ease 1s;
-    color: black;
+    color: White;
     font-size: 11vw;
+    text-shadow: 3px 0 black, 0 2px black, 3px 0 black, 0 -1px black;
     font-family: Teko, sans-serif;
-    text-shadow: 15px 15px white;
 }
 .intro-paragraph{
     line-height: 40px;
+}
+.intro-paragraph p
+{
+    color: White;
 }
 .intro-paragraph span{
     color: darkslategrey;
@@ -105,12 +123,12 @@ footer h3{
     margin: 25px;
     font-size: 2vw;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: ease 0.25s;
 }
 
 .social-media i:hover{
-    text-shadow: 5px 5px white;
+    color: #06013e;
 }
 .menu-items {
     display: none;
@@ -164,8 +182,8 @@ header .fa-bars{
     }
 
     .checkbtn {
-        font-size: 30px;
-        color: black;
+        font-size: 15px;
+        color: white;
         float: right;
         line-height: 80px;
         cursor: pointer;
@@ -200,7 +218,7 @@ header .fa-bars{
     flex-direction: column;
     position: fixed;
     top: 60px; /* Adjust position as needed */
-    background-color: navajowhite;
+    background-color: black;
     color: white;
     text-decoration: none;
     text-align: center;
